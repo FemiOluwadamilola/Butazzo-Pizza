@@ -19,8 +19,7 @@ router.post('/booking', async (req,res) => {
   	})
 
   	const Reserved = await newReservation.save();
-
-  	console.log(Reserved); 
+	console.log(Reserved); 
   }catch(err){
   	res.status(500).json({error_msg:err.message})
   }
